@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>fish01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!-- servlet01 ajax的初步使�?start -->  
+  <servlet>
+  	<servlet-name>fish01</servlet-name>
+  	<servlet-class>fish01.Servlet01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>fish01</servlet-name>
+  	<url-pattern>/Servlet01</url-pattern>
+  </servlet-mapping>
+<!-- servlet01 ajax的初步使�?end -->  
+
+<!-- servlet01_1 ajax的初步使用二级联�?start -->  
+  <servlet>
+  	<servlet-name>fish01_1</servlet-name>
+  	<servlet-class>fish01.Servlet01_1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>fish01_1</servlet-name>
+  	<url-pattern>/Servlet01_1</url-pattern>
+  </servlet-mapping>
+<!-- servlet01_1 ajax的初步使用二级联�?end --> 
+
+</web-app>
