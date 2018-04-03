@@ -8,23 +8,23 @@
 
  介绍ajax原理和初步使用(一个小栗子)
 
-###fish01
+### fish01
 
-####为什么ajax
+#### 为什么ajax
 
 需要局部刷新内容--性能、交互等方面的要求
 
-####ajax的代理人(异步对象)
+#### ajax的代理人(异步对象)
 
 XMLHttpRequest对象
 
-####原理
+#### 原理
 
  浏览器是先把请求发送到XMLHttpRequest异步对象之中，异步对象对请求进行封装，然后再与发送给服务器。服务器并不是以转发的方式响应，而是以流的方式把数据返回给浏览器
 
  XMLHttpRequest异步对象会不停监听服务器状态的变化，得到服务器返回的数据，就写到浏览器上【因为不是转发的方式，所以是无刷新就能够获取服务器端的数据】
-
-####方法(常用)
+ 
+#### 方法(常用)
 
 -   open()(String method,String url,boolean asynch,String username,String password)
      创建http请求
@@ -35,7 +35,7 @@ XMLHttpRequest对象
 -   setRequestHeader(String header,String value)
      设置消息头(post方法特用)
 
-####属性
+#### 属性
 
 -   onreadystatechange(指定回调函数)
      请求状态改变触发特定事件,4代表从服务器接收数据完成
@@ -46,11 +46,11 @@ XMLHttpRequest对象
 -   status
      服务器状态，200、404之类
 
-###fish01_1
+### fish01_1
 
  二级联动xml版
 
-####总结
+#### 总结
 
  监听下拉框的变化,如果变化了就使用异步操作访问服务器获取对应数据返回给异步对象
  使用DOM编程把数据动态添加到页面上
