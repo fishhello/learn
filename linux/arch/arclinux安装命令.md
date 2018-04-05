@@ -149,36 +149,6 @@ grub-install –recheck /dev/sda
   umount 分区
   shutdown now 拔开U盘再开机
 
-设置网络
-
-
-在你安装桌面之前，你需要先设置网络。
-
-你可以用下面的命令看见你的端口：
-
-iplink
-
-
-在我的电脑上，端口名是 enp0s3。
-
-将下面这一段加进文件中：
-
-vi/etc/systemd/network/enp0s3.network
-[Match]
-name=en*
-[Network]
-DHCP=yes
-保存并退出。重启网络来应用你刚才的改动。
-
-systemctl restart systemd-networkd
-systemctl enable systemd-networkd
-将下面这两句话加进 /etc/resolv.conf 中
-
-nameserver 8.8.8.8
-nameserver 8.8.4.4
-
-
-
 
 
 
