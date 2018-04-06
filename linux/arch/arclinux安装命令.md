@@ -1,8 +1,12 @@
+&emsp;安装archlinuc之前的准备-按照wifki引导安装
+
 ### 1.U盘启动
 
 - 使用GPT分区、UEFI启动模式写入U盘
 
 - 使用软件rufu
+
+> 使用dd模式安装引导后就没有出现mediaxx问题
 
 ### 2.磁盘分区
 
@@ -15,12 +19,12 @@
 - 查看选择硬盘--留意硬盘的size区分
  lsblk
 
-- 使用分区工具进行分区
+&emsp;使用分区工具进行分区
 &emsp;进入指定硬盘进行分区操作[parted/fdisk](https://www.cnblogs.com/onlybobby/p/7018788.html)
- 
+
 
   - 进入硬盘
- parted /dev/sdb 
+ parted /dev/sdb
 
   - 制定硬盘格式为gpt   msdos
  (parted) mklabel gpt
@@ -50,7 +54,7 @@
 
 - 格式化ext4 普通分区
   mkfs.ext4 /dev/xxx
-  
+
 - 格式化swap
   mkswap /dev/xxx
   swapon /dev/xxx   //激活swap
@@ -83,11 +87,6 @@
 ### 切换当前根目录
   arch-chroot /mnt
 
- ```
-一些需要与数据总线保持连接的 systemd 工具不能在 chroot 环境下使用，所以需要从当前环境退出。想要退出 chroot，就用下面的命令:
-exit
- ```
-
 ### 设定时区
   ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
   //设置时间标准 为 UTC，并调整 时间漂移:
@@ -96,7 +95,7 @@ exit
 ### 设置本地化
   pacman -S vim  //试一下能不能安装
   nano /etc/locale.gen   //把注释清掉en_US.UTF-8 UTF-8、zh_CN.UTF-8 UTF-8
-  
+
   //执行locale-gen以生成locale讯息
   locale-gen
   //将系统 locale 设置为en_US.UTF-8
@@ -114,16 +113,18 @@ exit
 ### 设置root密码
   passwd
 
-### 设置网络
+### 设置网络--无线
 
 - 安装上网需要的包
-  pacman -S dialog wpa_supplicant netctl wireless_tools 
+  pacman -S dialog wpa_supplicant netctl wireless_tools
 
 - 查看网卡名字
   ip link show
 
-- 设置启动dhcp
-  systemctl enable dhcpcd@enp0s2.service
+
+问题解决:
+  &emsp;ip link set xxx down
+  &emsp;netctl start xxx-ssid
 
 ### 开机引导
 
@@ -138,7 +139,7 @@ grub-install –recheck /dev/sda
 
 - efi管理器
   pacman -S efibootmgr
- 
+
 - 安装进efi分区
   grub-install –efi-directory=/boot/efi –bootloader-id=grub
 
@@ -148,21 +149,3 @@ grub-install –recheck /dev/sda
 ### 退出chroot模式,并卸分区
   umount 分区
   shutdown now 拔开U盘再开机
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
