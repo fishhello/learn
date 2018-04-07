@@ -6,7 +6,7 @@
 
 - 使用软件rufu
 
-> 使用dd模式安装引导后就没有出现mediaxx问题
+> 使用dd模式安装引导后就没有出现media test failure,check cable问题
 
 ### 2.磁盘分区
 
@@ -121,8 +121,7 @@
 - 查看网卡名字
   ip link show
 
-
-问题解决:
+[问题解决:](https://wiki.archlinux.org/index.php/Netctl#Job_for_netctl.40wlan.28....29.service_failed)
   &emsp;ip link set xxx down
   &emsp;netctl start xxx-ssid
 
