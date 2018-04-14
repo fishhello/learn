@@ -53,6 +53,7 @@ try{
 ```
 
 ### 连接池
+![图](https://github.com/fishhello/learn/blob/master/java%E5%A4%8D%E4%B9%A0/pictures/jdbc_chi.png)
 &emsp;避免频繁创建销毁资源--从池子里拿出用，用完放回池子  (c3p0.jar)
 ```java
 public class DBUtils {
