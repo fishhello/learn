@@ -35,14 +35,26 @@ Exception in thread "main" java.lang.NullPointerException
     public static void main(String args[]){
         ReadGuava guavaTester = new ReadGuava();
         Integer invalidInput = null;
-        //.of方法-- 返回要用作参数Optional类的实例。检查传递的值是否为null。
+        //.of方法-- 返回要用作参数Optional类的实例。如果传入的参数为null就会抛出空指针异常。
         Optional<Integer> a =  Optional.of(invalidInput);
         Optional<Integer> b =  Optional.of(new Integer(10));
         //System.out.println(a+""+b);
         System.out.println(guavaTester.sum(a,b));
     }
     public Integer sum(Optional<Integer> a, Optional<Integer> b){
-        //.get--获取输入存储在Optional 类的值。
+        //.get--获取实例。
         return a.get() + b.get();
-    }        
+    }
 ```
+```java
+Exception in thread "main" java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:877)
+	at com.google.common.base.Optional.of(Optional.java:103)
+	at po.ReadGuava.main(ReadGuava.java:22)
+```
+
+**Optional**
+>An immutable object that may contain a non-null reference to another object(一个不可变的对象，它可以包含对另一个对象的非空引用。)
+此类型的每个实例要么包含非空引用，要么不包含任何引用
+
+`使用：`解决空指针问题
