@@ -94,3 +94,8 @@ top -d 2
 查看进程树
 pstree -A
 ```
+
+- 13.git docktop test
+```
+选到你了，没办法
+```
