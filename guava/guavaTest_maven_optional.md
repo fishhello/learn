@@ -54,7 +54,13 @@ Exception in thread "main" java.lang.NullPointerException
 ```
 
 **Optional**
->An immutable object that may contain a non-null reference to another object(一个不可变的对象，它可以包含对另一个对象的非空引用。)
-此类型的每个实例要么包含非空引用，要么不包含任何引用
+>An immutable object that may contain a non-null reference to another object(一个不可变的对象，它可以包含对另一个对象的非空引用)
+此类型的每个实例要么包含非空引用（--引用存在），要么不包含任何引用（引用缺失）。轻率地使用null可能会导致许多问题，使用guava的快速失败操作拒绝null会更有帮助。
 
-`使用：`解决空指针问题
+```java
+Optional<Integer> a = Optional.of(3);
+a.isPresent();//判断Optional实例是否为非空引用，非空返回true
+```
+
+- 2.Preconditions前置条件
+>让方法调用的前置条件更简单
