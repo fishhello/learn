@@ -6,7 +6,7 @@
 |-|-|-|-|
 | 📓 [Python注释](https://github.com/fishhello/learn/blob/master/python/base.md)|🔥 [Python字符串操作](https://github.com/fishhello/learn/blob/master/python/spring_operation.md)| :construction: 待更新|:construction: 待更新|
 | 🐍 [Python常量与变量](https://github.com/fishhello/learn/blob/master/python/VariablesAndConstants.md)|🏘️ [Python循环](https://github.com/fishhello/learn/blob/master/python/loop.md)|||
-|🔢 [Python数据类型](https://github.com/fishhello/learn/blob/master/python/datatype.md)|:lock: Python模块|||
+|🔢 [Python数据类型](https://github.com/fishhello/learn/blob/master/python/datatype.md)|🤷 [Python模块](https://github.com/fishhello/learn/blob/master/python/module.md)|||
 | 🍒 [Python作用域](https://github.com/fishhello/learn/blob/master/python/scope.md) |:lock: Python文件|||
 | 🐼 [Python操作符](https://github.com/fishhello/learn/blob/master/python/operator.md) |:construction: 待更新|||
 |📈 [Python语句](https://github.com/fishhello/learn/blob/master/python/statement.md)||||
