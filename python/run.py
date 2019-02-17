@@ -1,3 +1,5 @@
+import statistics
+
 print("你好吖!")
 print("""This is a
     long line code.""")
@@ -114,3 +116,13 @@ for i in range(1, 6):
     print(i)
     if i == 2:
         break
+
+
+nums = [1, 5, 33, 21, 55]
+statistics.mean(nums)
+
+#中值
+statistics.median(nums)
+
+#众值
+statistics.mode(nums)
