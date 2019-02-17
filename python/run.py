@@ -76,3 +76,41 @@ fict = ["Toast", "asian", "austin", "orwell"]
 print(fict[0:2])
 print(fict[:2])
 print(fict[2:])
+
+name = "shafish"
+for char in name:
+    print(char)
+
+tv = ["error", "ok", "false", "true"]
+i = 0
+for show in tv:
+    new = tv[i]
+    new = new.upper()
+    tv[i] = new
+    i += 1
+
+
+print(tv)
+
+tv = ["error", "ok", "false", "true"]
+for i, show in enumerate(tv):
+    new = tv[i]
+    new = new.upper()
+    tv[i] = new
+
+
+print(tv)
+
+for i in range(1, 9):
+    print(i)
+
+x = 10
+while x > 0:
+    print('{}'.format(x))
+    x -= 1
+print("新年好！！")
+
+for i in range(1, 6):
+    print(i)
+    if i == 2:
+        break
