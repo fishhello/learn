@@ -2,7 +2,7 @@
 
 ### 一.[Ajax](https://github.com/fishhello/learn/tree/master/ajax)
 
-###二.Android
+### 二.[Android](https://github.com/fishhello/learn/tree/master/android)
 
 ### 三.[Docker](https://github.com/fishhello/learn/tree/master/docker)
 
@@ -18,5 +18,7 @@
 
 ### 九.[Mysql复习](https://github.com/fishhello/learn/tree/master/mysql%E5%A4%8D%E4%B9%A0)
 
-### 十.[Web](https://github.com/fishhello/learn/tree/master/web)
+### 十.[Python](https://github.com/fishhello/learn/tree/master/python)
+
+### 十一.[Web](https://github.com/fishhello/learn/tree/master/web)
 
