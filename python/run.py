@@ -121,8 +121,61 @@ for i in range(1, 6):
 nums = [1, 5, 33, 21, 55]
 statistics.mean(nums)
 
-#中值
+# 中值
 statistics.median(nums)
 
-#众值
+# 众值
 statistics.mode(nums)
+
+class Orange:
+    def __init__(self, w, c):
+        self.weight = w
+        self.color = c
+        print("created!")
+    
+
+or1 = Orange(10,"yellow")
+print(or1.weight)
+print(or1.color)
+or1.weight = 20
+or1.color = "dark"
+print(or1.weight)
+print(or1.color)
+
+class Orange:
+    # 类创建对象实例
+    def __init__(self, w, c):
+        self.weight = w
+        self.color = c
+        self.mold = 0
+        print("created!")
+
+
+    # 计算橘子的腐烂公式 
+    def rot(self, days, temp):
+        self.mold = days * temp
+    
+
+orange = Orange(6, "green")
+print(orange.mold)
+orange.rot(10,34)
+print(orange.mold)
+
+
+class Rectangle():
+    def __init__(self, w, l):
+        self.width = w
+        self.len = l
+
+    def area(self):
+        return self.width * self.len
+
+    def change_size(self, w, l):
+        self.width = w
+        self.len = l
+
+
+rectangle = Rectangle(30, 40)
+print(rectangle.area())
+rectangle.change_size(40, 50)
+print(rectangle.area())
