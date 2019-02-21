@@ -185,10 +185,31 @@ class Shape():
     def __init__(self, w, l):
         self.width = w
         self.len = l
-
+    
     def print_size(self):
         print(" {} by {}".format(self.width, self.len))
 
 
-my_shape = Shape(20, 25)
-my_shape.print_size()
+class Square(Shape):
+    pass
+
+
+my_square = Square(20, 25)
+my_square.print_size()
+
+
+class Dog():
+    def __init__(self, name, bread, owner):
+        self.name = name
+        self.bread = bread
+        self.owner = owner
+    
+
+class Person():
+    def __init__(self, name):
+        self.name = name
+
+
+mick = Person("make")
+stan = Dog("job", "bulldog", mick)
+print(stan.owner.name)
