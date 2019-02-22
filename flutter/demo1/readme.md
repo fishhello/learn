@@ -64,3 +64,61 @@ File-New-New Flutter object
 #### Flutter默认项目
 
 ![](https://github.com/fishhello/learn/blob/master/flutter/demo1/Screenshot_1550849528.png)
+
+
+##  Look me
+### 有时候这种慢是致命的,慢到死,慢到要启用任务管理器来关闭
+### 快捷键不方便,界面比较混乱
+### 文件系统把简单的搞复杂化了,眼花缭乱
+### 动不动gradle出问题，要更新，导入工程慢，占内存大
+### 当然了，这一切都是习惯问题
+
+## 这里重磅退出VSCODE
+### vscode更加轻便快捷，这一点，就够了。
+
+# vscode运行flutter
+- 安装完flutterSDK，运行flutter doctor没报错后
+- 安装打开vscode安装flutter插件
+```
+文件-首选项-扩展，搜索Flutter,选第一个install
+```
+![flutter插件安装](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223001518.png)
+
+`重载vscode后就可以直接创建flutter项目咧`
+- 创建Flutter项目
+> 在创建项目前可以ctrl+shift+p 运行flutter:run flutter doctor更新检查一下
+```
+ctrl+shift+p 输入:flutter
+选中 flutter:new project
+需要输入项目名称：如my_first_flutter
+```
+![flutter项目创建](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223002242.png)
+
+- 运行flutter项目
+- 首先，要启动avd
+```
+1. 新建好flutter后，右下角会有No Devices的显示，如下图：
+```
+![启动虚拟机1](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223002750.png)
+```
+2. 点击No Devices会显示本地安装的所有虚拟机(也可以在图示2步骤的最后一行新建一个/没用过)，选中一个点击启动
+```
+![启动虚拟机2](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003134.png)
+```
+3. 稍等片刻，等虚拟机启动完成
+```
+![启动虚拟机3](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003439.png)
+
+![虚拟机启动完成](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003532.png)
+```shell
+4.
+# 注意：需要用window的命令行比如：power shell，不能用bash等Linux命令行，会报字符错误
+ctrl + ` 打开vscode命令行
+# 输入:
+flutter run
+# 等待项目运行
+```
+![flutter项目启动完成](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003935.png)
+```
+5. 开启愉快的编码吧
+```
