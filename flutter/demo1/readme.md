@@ -59,5 +59,8 @@ File-New-New Flutter object
 # 不会的可以百度或发邮件给我帮忙解决
 点击AVD Manger 新建一个虚拟机,balabala
 ```
+![](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190222233118.png)
 
 #### Flutter默认项目
+
+![](https://github.com/fishhello/learn/blob/master/flutter/demo1/Screenshot_1550849528.png)
