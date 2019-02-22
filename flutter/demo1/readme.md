@@ -1,6 +1,6 @@
 # Flutter环境搭建
 
-#### 一.Java环境的搭建
+## 一. Java环境的搭建
 > [JDK8下载地址](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 1. 配置环境变量
@@ -12,7 +12,7 @@
 2. 终端运行java javac
 `如果javac显示错误，在path中新增C:\Program Files\Java\jre1.8.0_192\bin`
 
-#### 二.Flutter环境的搭建
+## 二. Flutter环境的搭建
 > [FlutterSDK下载地址](https://flutter.io/docs/development/tools/sdk/archive?tab=windows#windows)
 
 `当前使用版本：v1.0.0`
@@ -42,7 +42,7 @@ flutter doctor --android-licenses
 ```
 `如果报其他错，随手百度解决`
 
-#### 三.IDE开启Flutter项目
+## 三. IDE开启Flutter项目
 1. 打开Androidstudio 安装Flutter插件
 ```
 File-settings-Plugins 搜索Flutter，下载最多下载量那个插件
@@ -53,7 +53,7 @@ File-settings-Plugins 搜索Flutter，下载最多下载量那个插件
 2. 新建flutter项目
 > 安装完flutter插件后可以新建Flutter项目，如果没有就重启一下as
 ```
-File-New-New Flutter object
+File -New -New Flutter object
 ```
 3. 启动flutter项目
 ```
@@ -62,7 +62,8 @@ File-New-New Flutter object
 ```
 ![](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190222233118.png)
 
-#### 四.启动Flutter默认项目
+## 四. 启动Flutter默认项目
+> 点击三角形运行项目
 
 ![](https://github.com/fishhello/learn/blob/master/flutter/demo1/Screenshot_1550849528.png)
 
@@ -77,7 +78,7 @@ File-New-New Flutter object
 ## 这里重磅退出VSCODE
 ### vscode更加轻便快捷，这一点，就够了。
 
-#### 五.vscode运行flutter
+## 五. vscode运行flutter
 1. 安装完flutterSDK，运行flutter doctor没报错后
 - 安装打开vscode安装flutter插件
 ```
