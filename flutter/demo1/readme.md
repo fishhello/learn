@@ -60,12 +60,12 @@ File -New -New Flutter object
 # 不会的可以百度或发邮件给我帮忙解决
 点击AVD Manger 新建一个虚拟机,balabala
 ```
-![](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190222233118.png)
+![](https://github.com/fishhello/learn/blob/master/flutter/images/20190222233118.png)
 
 ## 四. 启动Flutter默认项目
 > 点击三角形运行项目
 
-![](https://github.com/fishhello/learn/blob/master/flutter/demo1/Screenshot_1550849528.png)
+![](https://github.com/fishhello/learn/blob/master/flutter/images/Screenshot_1550849528.png)
 
 
 ##  Look me
@@ -84,7 +84,7 @@ File -New -New Flutter object
 ```
 文件-首选项-扩展，搜索Flutter,选第一个install
 ```
-![flutter插件安装](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223001518.png)
+![flutter插件安装](https://github.com/fishhello/learn/blob/master/flutter/images/20190223001518.png)
 
 `重载vscode后就可以直接创建flutter项目咧`
 
@@ -95,24 +95,24 @@ ctrl+shift+p 输入:flutter
 选中 flutter:new project
 需要输入项目名称：如my_first_flutter
 ```
-![flutter项目创建](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223002242.png)
+![flutter项目创建](https://github.com/fishhello/learn/blob/master/flutter/images/20190223002242.png)
 
 3. 运行flutter项目
 4. 首先，要启动avd
 
 - 新建好flutter后，右下角会有No Devices的显示，如下图：
 
-![启动虚拟机1](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223002750.png)
+![启动虚拟机1](https://github.com/fishhello/learn/blob/master/flutter/images/20190223002750.png)
 
 - 点击No Devices会显示本地安装的所有虚拟机(也可以在图示2步骤的最后一行新建一个/没用过)，选中一个点击启动
 
-![启动虚拟机2](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003134.png)
+![启动虚拟机2](https://github.com/fishhello/learn/blob/master/flutter/images/20190223003134.png)
 
 - 稍等片刻，等虚拟机启动完成
 
-![启动虚拟机3](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003439.png)
+![启动虚拟机3](https://github.com/fishhello/learn/blob/master/flutter/images/20190223003439.png)
 
-![虚拟机启动完成](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003532.png)
+![虚拟机启动完成](https://github.com/fishhello/learn/blob/master/flutter/images/20190223003532.png)
 - 运行flutter项目
 ```shell
 # 注意：需要用window的命令行比如：power shell，不能用bash等Linux命令行，会报字符错误
@@ -121,6 +121,6 @@ ctrl + ` 打开vscode命令行
 flutter run
 # 等待项目运行
 ```
-![flutter项目启动完成](https://github.com/fishhello/learn/blob/master/flutter/demo1/20190223003935.png)
+![flutter项目启动完成](https://github.com/fishhello/learn/blob/master/flutter/images/20190223003935.png)
 
 - 开启愉快的编码吧
