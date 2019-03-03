@@ -70,5 +70,5 @@ class ProductDetail extends StatelessWidget {
 }
 ```
 
-![](https://github.com/fishhello/learn/blob/master/flutter/images/show1.png)
-![](https://github.com/fishhello/learn/blob/master/flutter/images/show2.png)
+![](https://github.com/fishhello/learn/blob/master/flutter/images/show1.jpg)
+![](https://github.com/fishhello/learn/blob/master/flutter/images/show2.jpg)
